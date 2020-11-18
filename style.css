@@ -1,5 +1,5 @@
 /* BODY */
-html, body {
+html, body, h1 {
     margin: 0;
     padding: 0;
 }
@@ -7,74 +7,14 @@ body {
     background: fixed no-repeat linear-gradient(to right bottom, rgb(129, 129, 129), 60%, rgb(197, 197, 197));
     color: rgb(211, 205, 205);
     font-family: 'Montserrat', sans-serif;
-    /* letter-spacing: 3px; */
-    /* padding: 10px; */
 }
 .wrapper {
     max-width: 720px;
-    height: auto;
     background-color: rgb(56, 54, 51);
     border-radius: 5px;
-    /* border: 2px solid rgb(209, 0, 24); */
     padding: 10px;
-    margin: auto;
-    margin-top: 110px;
+    margin: 110px auto 10px;
     text-align: center;
-    position: relative;
-}
-
-/* HEADER */
-header {
-    display: flex;
-    flex-direction: column;
-    margin-top: -110px;
-    height: auto;
-    width: 100%;
-}
-h1 {
-    margin: 0;
-}
-.pic-wrap {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    transition: all 0.5s;
-    border: 2px solid rgb(44, 133, 56);
-    margin: 0 auto;
-    transition: 1s ease-in-out;
-}
-
-.profile-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;  
-    filter: grayscale(1);
-    transition: 1s ease-in-out;
-}
-.pic-wrap:hover {
-    transform: scale(1.05) rotate(10deg);
-    transition: 1s ease-in-out;
-}
-.profile-pic:hover {
-    filter: grayscale(0.7);
-    transition: 1s ease-in-out;
-}
-
-.navigation {
-    text-decoration: none;
-    list-style: none;
-    width: 80%;
-    border-bottom: 1px solid  rgb(44, 133, 56);
-    font-weight: 600;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0;
-    padding: 10px 0;
-}
-
-.nav-item {
-    padding: 5px 10px 0 10px;
 }
 
 a {
@@ -86,6 +26,56 @@ a:hover {
     color:  rgb(153, 147, 147);
 }
 
+strong {
+    color:  rgb(44, 133, 56);
+    font-weight: 400;
+}
+
+/* HEADER */
+header {
+    margin-top: -110px;
+    width: 100%;
+}
+.pic-wrap, .profile-pic {
+    width: 200px;
+    height: 200px;
+}
+
+.pic-wrap, .profile-pic, .pic-wrap:hover, .profile-pic:hover {
+    transition: 1s ease-in-out;
+    border-radius: 50%;
+}
+
+.pic-wrap {
+    border: 2px solid rgb(44, 133, 56);
+    margin: 0 auto;
+}
+
+.profile-pic {  
+    filter: grayscale(1);
+}
+.pic-wrap:hover {
+    transform: scale(1.05) rotate(10deg);
+}
+.profile-pic:hover {
+    filter: grayscale(0.7);
+}
+
+.navigation {
+    list-style: none;
+    width: 80%;
+    border-bottom: 1px solid rgb(44, 133, 56);
+    font-weight: 600;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.nav-item {
+    padding: 5px;
+}
+
 /* CONTENT */
 content {
     text-align: left;
@@ -95,53 +85,35 @@ article {
     margin-bottom: 30px;
 }
 
-h2 {
+h2, p {
     padding: 0 20px;
-    margin: 1rem 0 0 0;
+}
+
+h2 {
+    margin: 0;
     font-size: 2rem;
     letter-spacing: 2px;
-/*     color:  rgb(44, 133, 56);
- */}
+}
+
 h3 {
     padding: 0 30px;
     margin: 1rem 0 0 0;
 }
 
 p {
-    padding: 0 20px;
     margin: 0.3rem 0 0 0;
     text-indent: 20px;
-    /* text-align: justify; */
     line-height: 1.3rem;
-}
-
-dl {
-    margin: 0;
-}
-
-dt {
-    padding: 10px 40px 0 40px;
-    font-weight: 600;
-}
-
-dd > p {
-    text-indent: 0;
-    margin: 0;
-}
-
-strong {
-    color:  rgb(44, 133, 56);
-    font-weight: 400;
 }
 
 .znalosti-ico {
     font-size: 2rem;
     padding: 0;
     margin: 1rem auto 0 auto;
-    width: 80%;
+    width: 60%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-self: center;
 }
 .znalosti-ico > .fab {
     padding: 0 5px;
@@ -152,10 +124,9 @@ strong {
 footer {
     width: 100%;
     height: 4rem;
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
 a > .fab {
