@@ -1,4 +1,8 @@
 /* BODY */
+html {
+  scroll-behavior: smooth;
+}
+
 html, body, h1 {
     margin: 0;
     padding: 0;
