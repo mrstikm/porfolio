@@ -27,7 +27,7 @@ a:hover {
 }
 
 strong {
-    color:  rgb(44, 133, 56);
+    color: #bada55;
     font-weight: 400;
 }
 
@@ -63,7 +63,7 @@ h1 {
 }
 
 .pic-wrap {
-    border: 2px solid rgb(44, 133, 56);
+    border: 2px solid #bada55;
     margin: 0 auto;
 }
 
@@ -80,7 +80,7 @@ h1 {
 .navigation {
     list-style: none;
     width: 80%;
-    border-bottom: 1px solid rgb(44, 133, 56);
+    border-bottom: 1px solid #bada55;
     font-weight: 600;
     display: inline-flex;
     flex-wrap: wrap;
@@ -130,6 +130,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    color: #bada55;
 }
 .znalosti-ico > .fab {
     padding: 0 5px;
@@ -148,7 +149,7 @@ footer {
 a > .fab {
     font-size: 3rem;
     padding: 0 10px;
-    color: rgb(243, 243, 243);
+    color: #bada55;
 }
 a > .fab:hover {
     color: rgb(153, 147, 147);
