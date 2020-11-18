@@ -39,13 +39,32 @@ header {
 
 .header-firstrow {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(225px,1fr));
     grid-template-rows: 1fr;
     row-gap: 10px;
     justify-items: center;
     justify-content: center;
     align-items: end;
     width: 100%;
+}
+.headline, .workposition {
+    text-align: left;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #bada55;
+    text-shadow: 1px 1px 2px black;
+}
+
+@media screen and (max-width: 711px) and (min-width: 487px) {
+    .workposition {
+        align-self: start;
+        height: 95px;
+    }
+    .headline {
+        align-self: end;
+    }
 }
 
 h1 {
