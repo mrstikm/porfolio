@@ -36,6 +36,22 @@ header {
     margin-top: -110px;
     width: 100%;
 }
+
+.header-firstrow {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    grid-template-rows: 1fr;
+    row-gap: 10px;
+    justify-items: center;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+}
+
+h1 {
+    grid-row: span 2;
+}
+
 .pic-wrap, .profile-pic {
     width: 200px;
     height: 200px;
