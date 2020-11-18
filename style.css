@@ -93,7 +93,7 @@ h1 {
     transform: scale(1.05) rotate(10deg);
 }
 .profile-pic:hover {
-    filter: grayscale(0.7);
+    filter: grayscale(0);
 }
 
 .navigation {
